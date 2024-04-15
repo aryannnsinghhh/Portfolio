@@ -24,11 +24,9 @@ body{
     background-image: url(bg2.png);
     background-size: cover;
     background-position: center;
-    background-color: #080808;
 }
 .container{
     padding: 10px 5%;
-
 }
 nav{
     display: flex;
@@ -60,7 +58,7 @@ nav ul li:hover{
     transform: translateY(-5px);
 }
 .header-text{
-
+    margin-left: 2%;
     margin-top: 5%;
     font-size: 34px;
 }
@@ -84,7 +82,7 @@ nav ul li:hover{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 5%;
+    border-radius: 15%;
 }
 .about-col-2{
     flex-basis: 50%;
@@ -241,10 +239,10 @@ p{
     background-color: #080808;
 }
 .contact-left{
-    flex-basis: 40%;
+    flex-basis: 35%;
 }
 .contact-right{
-    flex-basis: 55%;
+    flex-basis: 60%;
 }
 .contact-left p{
     margin-top: 20px;
