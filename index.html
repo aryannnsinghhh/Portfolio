@@ -41,14 +41,31 @@
                     <h1 class="subtitle">About Me</h1><br><br>
                     <h3>
                         <p>
-                            Hey there! You can call me AKS - that's what she does. I specialize in crafting captivating and responsive front-end designs. My passion lies in bringing the best possible user experiences to life, and I do that by turning your design visions into reality. With a keen eye for detail and a knack for problem-solving, I thrive on creating visually stunning websites and apps that not only look great but also function seamlessly across most devices. 
+                            Hey there! You can call me AKS - that's what she does. My passion lies in crafting responsive front-end designs and bringing the best possible user experiences to life. I create visually stunning websites and apps that look great and also function across most devices. 
                         </p>
-                        <br>
                         <p>
                             When I'm not busy coding, you can find me exploring new design trends, experimenting with cutting-edge technologies, or simply enjoying a good cup of coffee while brainstorming my next project.
                         </p>
-
+                        <br>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                            <li><span>Web Dev</span><br>Web app Development</li>
+                            <li><span>App Dev</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>2026</span><br>B.Tech from VIT,Vellore</li>
+                            <li><span>2021</span><br>12th from Open Minds - A Birla School, Kankarbagh</li>
+                            </ul>
+                        </div>
                     </h3>
+                    
                 </div>
             </div>
         </div>
@@ -157,4 +174,18 @@
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 || Aryan Kumar Singh || Coder - Developer</p>
     </div>
 </body>
+<script>
+    var tablinks = document.getElementsByClassName( "tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link") ;
+        document.getElementById(tabname).classList.add("active-tab") ;
+    }
+</script>
 </html>
