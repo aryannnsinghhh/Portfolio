@@ -18,10 +18,10 @@
                 <img src="logo.png" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text"><br><br>
@@ -35,20 +35,45 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
+<<<<<<< HEAD
                     <img src="about.jpg">
+=======
+                    <img src="about.png">
+>>>>>>> 28e9ec21ca9d008bba28d511b40a18b210c506a6
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1><br><br>
                     <h3>
                         <p>
+<<<<<<< HEAD
                             Hey there! You can call me AKS - that's what she does. I specialize in crafting captivating and responsive front-end designs. My passion lies in bringing the best possible user experiences to life, and I do that by turning your design visions into reality. With a keen eye for detail and a knack for problem-solving, I thrive on creating visually stunning websites and apps that not only look great but also function seamlessly across most devices. 
+=======
+                            Hey there! You can call me AKS - that's what she does. My passion lies in crafting responsive front-end designs and bringing the best possible user experiences to life. I create visually stunning websites and apps that look great and also function across most devices. 
+>>>>>>> 28e9ec21ca9d008bba28d511b40a18b210c506a6
                         </p>
-                        <br>
                         <p>
                             When I'm not busy coding, you can find me exploring new design trends, experimenting with cutting-edge technologies, or simply enjoying a good cup of coffee while brainstorming my next project.
                         </p>
-
+                        <br>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                            <li><span>Web Dev</span><br>Web app Development</li>
+                            <li><span>App Dev</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>2026</span><br>B.Tech from VIT,Vellore</li>
+                            <li><span>2021</span><br>12th from Open Minds - A Birla School, Kankarbagh</li>
+                            </ul>
+                        </div>
                     </h3>
+                    
                 </div>
             </div>
         </div>
@@ -131,10 +156,10 @@
                     <div>Want to learn more about what I can do for you? Drop me a line via the contact section here, and I'll get back to you asap. Let's collaborate and turn your digital dreams into reality!</div>
                     <div class="social-icon">
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/aryannnsinghhh"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aryan-singh-11x11y2515/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Aryannnsinghhh"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/aryannnsinghhh/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <br>   
                     <p> <i class="fa-solid fa-envelope"></i> kumararyansingh213@gmail.com </p>
@@ -157,4 +182,18 @@
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 || Aryan Kumar Singh || Coder - Developer</p>
     </div>
 </body>
+<script>
+    var tablinks = document.getElementsByClassName( "tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link") ;
+        document.getElementById(tabname).classList.add("active-tab") ;
+    }
+</script>
 </html>
